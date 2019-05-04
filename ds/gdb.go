@@ -125,7 +125,7 @@ func ParseGDBGame(game gdb.Game, imgURL string) *Game {
 	ret.Developer = game.Developer
 	ret.Publisher = game.Publisher
 	ret.Genre = genre
-	ret.Source = "theGamesDB.net"
+	ret.Source = "api.thegamesdb.net"
 	p, err := strconv.ParseInt(strings.TrimRight(game.Players, "+"), 10, 32)
 	if err == nil {
 		ret.Players = p
